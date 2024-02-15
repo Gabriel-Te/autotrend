@@ -1,0 +1,27 @@
+.imgautotrend {
+    width: 20vh;
+  }
+  
+  .fotoPerfil{
+    margin-left: auto;
+    margin-right: 3px;
+  }
+  
+  .fotoPerfil img{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 100%;
+    align-self: flex-end;
+  }
+  
+  
+  
+  
+  nav {
+    background-color: #3c3c3c;
+    display: flex;
+    padding: 2px 0 0 0;
+    justify-content: center;
+  }

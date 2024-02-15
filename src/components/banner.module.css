@@ -1,0 +1,28 @@
+.ContainerBanner{
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.ContainerBanner img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover; /* Manter proporções da imagem */
+}
+
+.ContainerBanner p{
+    position: absolute;
+    top: 30%;
+    right: 0.1px;
+    background-color:rgba(60, 60, 60, 0.8); /* Cor de fundo com 80% de opacidade */
+    color: aliceblue;
+    margin: 10px 0px 10px 0;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    max-width: 300px; /* Tamanho máximo do texto */
+    min-width: 300px; /* Tamanho máximo do texto */
+    max-height: 400px;
+    min-height: 400px;
+    overflow-wrap: break-word; /* Quebra o texto em palavras longas */
+}
