@@ -3,20 +3,11 @@
 
 body{
     background-color: #464646;
+    margin: 0;
+    padding: 0;
 }
 
-.container h1 {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 45px;
-    color: #FFF;
-}
-
-.container h2 {
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 25px;
-    color: #BEFF5B;
+p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
 }

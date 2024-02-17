@@ -1,0 +1,13 @@
+.noticia{
+    display: flex;
+    background-color: aqua;
+}
+
+.noticia img{
+    width: 250px;
+    object-fit: cover; /* Manter proporções da imagem */
+}
+
+.columm{
+    flex-direction: column;
+}

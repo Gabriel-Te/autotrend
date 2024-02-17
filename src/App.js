@@ -1,7 +1,8 @@
-import NavBar from './components/nav'
+import NavBar from './layout/nav'
 import './App.css';
-import Banner from './components/banner';
+import Banner from '../src/components/banner';
 import fotoBanner from './img/fotoBanner.png'
+import NewsArea from './components/newsArea';
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
         <div className="container">
           < Banner foto={fotoBanner} texto="Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado."/>
 
-          <h1>ULTIMAS NOTICIAS</h1>
-          <h2>As notícias mais recentes do mundo do Automobilismo</h2>
+          < NewsArea/>
+
         </div>
         
     </div>
