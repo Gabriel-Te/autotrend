@@ -1,6 +1,7 @@
 .noticia{
     display: flex;
-    background-color: aqua;
+    background-color: #212121;
+    margin: 10px 20px 10px 20px;
 }
 
 .noticia img{
@@ -10,4 +11,27 @@
 
 .columm{
     flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.columm h1{
+    color: #BEFF5B;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+    padding: 4px 2px 4px 2px;
+}
+
+.columm h2{
+    color: #FFF;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    padding: 0px 2px 10px 2px;
+}
+
+.columm p{
+    color: #C8C8C8;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    padding: 0px 2px 10px 2px;
 }

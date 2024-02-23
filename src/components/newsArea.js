@@ -8,6 +8,8 @@ function NewsArea () {
         <h2 className={styles.subtitulo}>As notícias mais recentes do mundo do Automobilismo</h2>
 
         < News/>
+        < News/>
+        < News/>
         </div>
     )
 }
