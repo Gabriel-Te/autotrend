@@ -1,4 +1,4 @@
-import fotonoticia from '../img/fotoBanner.png'
+import fotonoticia from '../../img/fotoBanner.png'
 import styles from './news.module.css'
 
 function News () {

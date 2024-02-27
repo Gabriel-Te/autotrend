@@ -1,10 +1,10 @@
 import styles from './banner.module.css'
 
-function Banner ({texto, foto}) {
+function Banner (props) {
     return(
     <div className={styles.ContainerBanner}>
-        <img src={foto} alt="foto foda" />
-        <p>{texto}</p>
+        <img src={props.foto} alt="foto foda" />
+        <p>{props.texto}</p>
     </div>
     )
 }
