@@ -3,7 +3,7 @@ import './App.css';
 import Banner from './components/layout/banner';
 import fotoBanner from './img/fotoBanner.png'
 import NewsArea from './components/News/newsArea';
-import SocialArea from './components/Social/SocialArea';
+import SocialArea from './components/Social/socialArea';
 
 function App() {
 

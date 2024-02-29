@@ -1,0 +1,25 @@
+.containerButtonSocial{
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inria Sans', sans-serif;
+    margin: 10px 0px 10px 0px;
+}
+
+.titulo{
+    text-align: center;
+    
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.botao{
+    height: 50px;
+    width: 200px;
+    align-items: center;
+    font-family: 'Inria Sans', sans-serif;
+}

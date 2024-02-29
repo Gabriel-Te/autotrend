@@ -1,4 +1,23 @@
 .ContainerSocial{
-    background-color: orange;
+    background-color: #3C3C3C;
     grid-area: social;
+}
+
+.titulo {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    color: #FFF;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.subtitulo {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: #FF6642;
+    margin-left: 20px;
 }

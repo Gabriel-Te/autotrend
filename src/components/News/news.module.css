@@ -5,7 +5,7 @@
 }
 
 .noticia img{
-    width: 250px;
+    width: 330px;
     object-fit: cover; /* Manter proporções da imagem */
 }
 

@@ -1,11 +1,16 @@
-import styles from './SocialArea.module.css'
+
+import SocialButton from './socialButton'
+import styles from './socialArea.module.css'
 
 function SocialArea() {
 
 
     return(
         <div className={styles.ContainerSocial}>
-            <p>eu sou a area social</p>
+            <h1 className={styles.titulo}>AREA DA COMUNIDADE</h1>
+            <h2 className={styles.subtitulo}>Junte-se a nossa comunidade apaoixonada por automóveis</h2>
+
+            < SocialButton/>
         </div>
     )
 }

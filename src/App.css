@@ -3,9 +3,10 @@
 
 .gridContainer{
     display: grid;
+    grid-template-columns: 60% auto;
 
     grid-template-areas:
-    "news news social";
+    "news social";
 }
 
 body{
