@@ -11,6 +11,8 @@ function SocialArea() {
             <h2 className={styles.subtitulo}>Junte-se a nossa comunidade apaoixonada por automóveis</h2>
 
             < SocialButton/>
+
+            < SocialButton/>
         </div>
     )
 }

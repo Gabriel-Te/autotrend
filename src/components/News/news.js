@@ -1,17 +1,18 @@
-import fotonoticia from '../../img/fotoBanner.png'
+
 import styles from './news.module.css'
 
-function News () {
+function News (props) {
     return(
     <div className={styles.noticia}>
-        <img src={fotonoticia} alt="" />
+    <a href="#">
+        <img src={props.fotonoticia} alt="" />
 
             <div class={styles.columm}>
-            <h1>MERCEDES CLASS S MAYBACH</h1>
-                <h2>O carro mais luxuoso da preparadora Maybach</h2>
-                <p>Seu texto aqui. Este é um texto longo que pode exo.</p>
+            <h1>{props.titulo}</h1>
+                <h2>{props.subtitulo}</h2>
+                <p>{props.conteudo}</p>
             </div>
-            
+            </a>
     </div>
     )
 }

@@ -1,11 +1,13 @@
-.noticia{
+.noticia a{
     display: flex;
     background-color: #212121;
     margin: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 
 .noticia img{
-    width: 330px;
+    min-width: 330px;
+    max-width: 330px;
     object-fit: cover; /* Manter proporções da imagem */
 }
 
