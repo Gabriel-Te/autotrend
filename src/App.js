@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react';
 import NavBar from './layout/nav'
 import './App.css';
 import Banner from './components/layout/banner';
@@ -7,12 +8,12 @@ import SocialArea from './components/Social/socialArea';
 
 function App() {
 
-
   return (
     <div className="App">
         < NavBar />
 
         <div className="container">
+          
           < Banner foto={fotoBanner} texto="Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado.Seu texto aqui. Este é um texto longo que pode exceder o tamanho máximo e ser quebrado."/>
 
           <div className='gridContainer'>

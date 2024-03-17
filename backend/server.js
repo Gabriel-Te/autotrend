@@ -2,12 +2,18 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient
 
 const express = require('express')
+const cors = require('cors'); // Importe o middleware cors
 const { PORT, HOST } = require('./config')
 
 
 const app = express()
 app.use(express.json());
+app.use(cors())
 
+app.use(cors({
+    origin: 'http://localhost:3000' // Permitir solicitações apenas da porta 3000
+  }));
+  
 //GET NOTICIAS
 
 app.get('/noticias', async (req, res) => {
