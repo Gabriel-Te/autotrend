@@ -1,4 +1,4 @@
-.ContainerNews{
+.containerNews{
     grid-area: news;
 }
 
@@ -18,6 +18,20 @@
     font-weight: 700;
     font-style: normal;
     font-size: 25px;
-    color: #BEFF5B;
+    color: #3E97FF;
     margin-left: 20px;
+}
+
+.errorMessage{
+    color: #0f0f0f;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 20px;
+    flex-direction:row;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
 }

@@ -5,7 +5,7 @@ import fotonoticia from '../../img/fotoBanner.png'
 
 function NewsArea () {
 
-    const [NewsData, setNewsData] = useState([])
+    const [newsData, setNewsData] = useState([])
 
     const getNews = async () => {
       try{
@@ -23,14 +23,22 @@ function NewsArea () {
     }, []) 
   
     return (
-        <div className={styles.ContainerNews}>
+        <div className={styles.containerNews}>
         <h1 className={styles.titulo}>ULTIMAS NOTICIAS</h1>
         <h2 className={styles.subtitulo}>As notícias mais recentes do mundo do Automobilismo</h2>
 
-        {
-            NewsData.map((noticia) => {
+        { newsData.length === 0 ? (
+
+        <div>
+        <p className={styles.errorMessage}>Erro ao procurar as noticias, tente novamente mais tarde</p>
+        </div>
+
+        ) : (
+          
+            newsData.map((noticia) => {
 
                 return(
+
                 < News
                 fotonoticia={fotonoticia}
                 key={noticia.id_noticia}
@@ -38,9 +46,9 @@ function NewsArea () {
                 subtitulo={noticia.subtitulo}
                 conteudo={noticia.conteudo}
                 />
-                )
-            }
+                )})
             )
+
         }
 
         </div>

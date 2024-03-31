@@ -1,17 +1,22 @@
-.imgautotrend {
-    width: 20vh;
+  .navContainer{
+    display: flex;
+    align-items: center;
+  }
+
+  .imgautotrend {
+    width: 250px;
   }
   
   .fotoPerfil{
     margin-left: auto;
     margin-right: 3px;
+    display: flex;
+    align-items: center;
   }
   
   .fotoPerfil img{
     width: 70px;
     height: 70px;
-    margin-top: 5px;
-    margin-right: 5px;
     border-radius: 100%;
     align-self: flex-end;
   }

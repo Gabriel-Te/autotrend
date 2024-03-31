@@ -10,7 +10,7 @@
 
 .titulo{
     text-align: center;
-    color: #FF6642;
+    color: #3E97FF;
     font-weight: 500;
     padding: 4px 0px 4px 0px;
 }
@@ -20,18 +20,4 @@
     color: #FFF;
     font-weight: 300;
     padding: 4px 0px 4px 0px;
-}
-
-.botao{
-    height: 50px;
-    width: 200px;
-    align-items: center;
-    font-family: 'Inria Sans', sans-serif;
-    margin: 4px 0px 4px 0px;
-    text-decoration: none;
-    cursor: pointer;
-    color: #FFF;
-    background-color: #FF6642;
-    border: none;
-    font-weight: 700;
 }

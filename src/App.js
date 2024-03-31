@@ -1,9 +1,10 @@
 import {useState, useEffect} from 'react';
-import {Link,Routes, Route, BrowserRouter as Router} from 'react-router-dom';
+import {Routes, Route, BrowserRouter as Router} from 'react-router-dom';
 
-import NavBar from './layout/nav'
+import NavBar from './components/layout/nav';
 import './App.css';
 import Home from './pages/Home';
+import CreateNews from './pages/CreateNews';
 
 
 function App() {
@@ -11,13 +12,15 @@ function App() {
   return (
 
     <div className="App">
+      <Router>
 
         <NavBar/>
-        
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home/>}></Route>
-        </Routes>  
+
+          <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/criarnoticia" element={<CreateNews/>}></Route>
+          </Routes>
+          
       </Router>
 
 

@@ -1,13 +1,14 @@
-import styles from './socialButton.module.css'
+import Button from '../Button'
+import styles from './socialCard.module.css'
 
-function SocialButton () {
+function SocialCard () {
     
     return(
     <div className={styles.containerButtonSocial}>
         <h1 className={styles.titulo}>DISCUSSÕES</h1>
         <h2 className={styles.subtitulo}>Participe de discussões com outros usuários sobre diversos assuntos automobilísticos</h2>
-        <input className={styles.botao} type="button" value="COMECE A NAVEGAR->"/>
+        <Button value='COMECE A NAVEGAR >' type='submit'/>
     </div>
     )}
 
-    export default SocialButton
+    export default SocialCard

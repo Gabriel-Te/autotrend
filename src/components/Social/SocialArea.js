@@ -1,5 +1,5 @@
 
-import SocialButton from './socialButton'
+import SocialCard from './socialCard'
 import styles from './socialArea.module.css'
 
 function SocialArea() {
@@ -10,9 +10,9 @@ function SocialArea() {
             <h1 className={styles.titulo}>AREA DA COMUNIDADE</h1>
             <h2 className={styles.subtitulo}>Junte-se a nossa comunidade apaoixonada por automóveis</h2>
 
-            < SocialButton/>
+            < SocialCard/>
 
-            < SocialButton/>
+            < SocialCard/>
         </div>
     )
 }
