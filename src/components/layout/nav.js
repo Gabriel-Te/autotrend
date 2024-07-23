@@ -1,4 +1,4 @@
-import { Link, Router } from 'react-router-dom'
+import { Link, } from 'react-router-dom'
 import atIndex from '../../img/autotrend.png'
 import fotoPerfil from '../../img/imgperfil.png'
 import styles from './nav.module.css'

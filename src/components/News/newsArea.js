@@ -2,17 +2,23 @@ import { useState, useEffect } from 'react'
 import News from './news'
 import styles from './newsArea.module.css'
 import fotonoticia from '../../img/fotoBanner.png'
+import useNewsStore from '../../store/newsStore'
 
 function NewsArea () {
 
-    const [newsData, setNewsData] = useState([])
+    const {setNews, newsData} = useNewsStore((state) => ({
+      setNews : state.setNews,
+      newsData: state.news
+    }))
+    //const setNews = useNewsStore(state => state.setNews)
+    //const newsData = useNewsStore(state => state.news)
 
     const getNews = async () => {
       try{
         const result = await fetch('http://localhost:3001/noticias')
         const data = await result.json()
-        setNewsData(data)
-        console.log('dados dos usuarios adquiridos com sucesso')
+        setNews(data)
+        console.log(setNews)
       }catch(error){
         console.log('erro ao adquirir os usuarios da requisição', error)
       }

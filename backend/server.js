@@ -2,7 +2,7 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient
 
 const express = require('express')
-const cors = require('cors'); // Importe o middleware cors
+const cors = require('cors');
 const { PORT, HOST } = require('./config')
 
 

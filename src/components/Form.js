@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import styles from './Form.module.css'
 import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 function Form () {
+
+    const navigate = useNavigate()
 
     const [formData, setFormData] = useState({
         titulo: '',
@@ -16,8 +19,6 @@ function Form () {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('o submit ocorreu')
-
         try{
             const response = await fetch ('http://localhost:3001/enviar', {
                 method: 'POST',
@@ -26,8 +27,8 @@ function Form () {
                 },
                 body: JSON.stringify(formData)
             })
-
             console.log('noticia criada e enviar com sucesso')
+            navigate('/')
         }catch(error){
             console.error('erro ao criar e enviar a noticia', error)
         }  
@@ -77,6 +78,7 @@ function Form () {
 
              <div>
                 <Button className={styles.botao} type='submit' value='Enviar'/>
+                
              </div>
         </form>
     </div>)
