@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './Form.module.css'
 import Button from './Button';
 import { useNavigate } from 'react-router-dom';
+import useNewsStore from '../store/newsStore';
 
 function Form () {
 
@@ -12,6 +13,7 @@ function Form () {
         subtitulo: '',
         conteudo: ''
     });
+    const addNews = useNewsStore(state => state.addNews)
 
     const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})
@@ -27,8 +29,13 @@ function Form () {
                 },
                 body: JSON.stringify(formData)
             })
-            console.log('noticia criada e enviar com sucesso')
-            navigate('/')
+            if (response.ok) {
+                const newNoticia = await response.json()
+                addNews(newNoticia)
+            } else {
+                console.error('Erro ao criar e enviar a noticia')
+            }
+        navigate('/')
         }catch(error){
             console.error('erro ao criar e enviar a noticia', error)
         }  

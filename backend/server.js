@@ -59,7 +59,7 @@ app.post('/enviar', async (req, res) => {
             }});
 
         console.log('dados da nova noticia:', dados)
-        res.status(200).send('Notícia criada com sucesso');
+        res.status(200).json(newNoticia);
     } catch (error) {
         console.error('Erro ao criar notícia:', error);
         res.status(500).send('Erro ao criar notícia');
