@@ -3,7 +3,7 @@ import Form from "../components/Form"
 function CreateNews() {
     return (
         <div>
-            <Form/>
+            <Form />
         </div>
     )
 }

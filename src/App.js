@@ -1,5 +1,5 @@
 
-import {Routes, Route, BrowserRouter as Router} from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import NavBar from './components/layout/nav';
 import './App.css';
@@ -14,17 +14,17 @@ function App() {
     <div className="App">
       <Router>
 
-        <NavBar/>
+        <NavBar />
 
-          <Routes>
-            <Route path="/" element={<Home/>}></Route>
-            <Route path="/criarnoticia" element={<CreateNews/>}></Route>
-          </Routes>
-          
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/criarnoticia" element={<CreateNews />}></Route>
+        </Routes>
+
       </Router>
 
 
-        
+
     </div>
   );
 }

@@ -12,8 +12,8 @@ app.use(cors())
 
 app.use(cors({
     origin: 'http://localhost:3000' // Permitir solicitações apenas da porta 3000
-  }));
-  
+}));
+
 //GET NOTICIAS
 
 app.get('/noticias', async (req, res) => {
@@ -30,14 +30,14 @@ app.get('/noticias', async (req, res) => {
 
 //GET BY ID NOTICIA
 
-app.get ('/noticias/:id', async (req,res) => {
+app.get('/noticias/:id', async (req, res) => {
     const id_noticia = parseInt(req.params.id)
 
-    try{
-        const noticiasId = await prisma.noticia.findUnique({ where: {id_noticia}});
+    try {
+        const noticiasId = await prisma.noticia.findUnique({ where: { id_noticia } });
         res.status(200).json(noticiasId)
         console.log('noticia encontrada com sucesso')
-    }catch(error){
+    } catch (error) {
         console.error('erro aao encontrar a noticia', error)
         res.status(500).send('erro ao encontrar a noticia')
     }
@@ -56,7 +56,8 @@ app.post('/enviar', async (req, res) => {
                 titulo: dados.titulo,
                 subtitulo: dados.subtitulo,
                 conteudo: dados.conteudo
-            }});
+            }
+        });
 
         console.log('dados da nova noticia:', dados)
         res.status(200).json(newNoticia);
@@ -69,19 +70,19 @@ app.post('/enviar', async (req, res) => {
 
 //UPDATE NOTICIA
 
-app.put('/atualizar/:id', async (req,res) => {
+app.put('/atualizar/:id', async (req, res) => {
     const newDataUser = req.body
     const id_noticia = parseInt(req.params.id)
 
-    try{
+    try {
         const updateUser = await prisma.noticia.update({
-            where: {id_noticia},
+            where: { id_noticia },
             data: newDataUser
         })
-        
+
         console.log('noticia atualizada com sucesso:', updateUser)
         res.status(200).send('noticia atualizada com sucesso')
-    }catch(error){
+    } catch (error) {
         console.error('erro ao atualizar noticias:', error)
         res.status(500).send('erro ao atualizar sua noticia')
     }
@@ -93,18 +94,18 @@ app.put('/atualizar/:id', async (req,res) => {
 app.delete('/deletar/:id', async (req, res) => {
     const id_noticia = parseInt(req.params.id)
 
-    try{
-        const deletarNoticia = await prisma.noticia.delete({where: {id_noticia}})
+    try {
+        const deletarNoticia = await prisma.noticia.delete({ where: { id_noticia } })
 
         console.log('noticia deletada com sucesso', deletarNoticia)
         res.status(200).send(`noticia ${id_noticia} deletada com sucesso`)
-    }catch(error){
+    } catch (error) {
         console.error('erro ao deletar noticia', error)
         res.status(500).send('erro ao deletar noticia')
     }
 })
 
 
-app.listen(PORT,() => {
+app.listen(PORT, () => {
     console.log(`servidor rodando no endereço ${HOST}:${PORT}`)
 })

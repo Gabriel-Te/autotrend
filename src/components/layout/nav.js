@@ -3,21 +3,21 @@ import atIndex from '../../img/autotrend.png'
 import fotoPerfil from '../../img/imgperfil.png'
 import styles from './nav.module.css'
 
-function NavBar () {
+function NavBar() {
 
-    return(
+  return (
     <nav className={styles.navContainer}>
-        <a href="/">
-          <img src={atIndex} alt="autotrend" className={styles.imgautotrend}/>
-        </a>
+      <a href="/">
+        <img src={atIndex} alt="autotrend" className={styles.imgautotrend} />
+      </a>
 
-        <a className={styles.fotoPerfil}>
-        <Link to='/criarnoticia'><img src={fotoPerfil} alt="perfil"/></Link>
-        </a>
-        
+      <a className={styles.fotoPerfil}>
+        <Link to='/criarnoticia'><img src={fotoPerfil} alt="perfil" /></Link>
+      </a>
+
 
     </nav>
-    )
+  )
 
 }
 
