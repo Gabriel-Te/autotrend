@@ -5,13 +5,20 @@
     justify-content: center;
 }
 
+.ContainerBanner a{
+    min-width: 100%;
+    height: 800px;
+}
+
 .ContainerBanner img{
     width: 100%;
     height: 800px;
     object-fit: cover; /* Manter proporções da imagem */
 }
 
-.ContainerBanner p{
+.TextArea{
+
+    flex-direction: column;
     position: absolute;
     top: 30%;
     right: 0.1px;
@@ -25,4 +32,32 @@
     max-height: 400px;
     min-height: 400px;
     overflow-wrap: break-word; /* Quebra o texto em palavras longas */
+}
+
+.titulo{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    color: #3E97FF;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.subtitulo{
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    display: flex;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.conteudo{
+    font-weight: 400;
+    font-family: "Inria Sans", sans-serif;
+    text-align: left;
+    display: flex;
+    color: #C8C8C8;
 }

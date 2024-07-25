@@ -5,6 +5,7 @@ import NavBar from './components/layout/nav';
 import './App.css';
 import Home from './pages/Home';
 import CreateNews from './pages/CreateNews';
+import NewsSelected from './pages/NewsSelected';
 
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
         <NavBar />
 
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route exact path="/" element={<Home />}></Route>
           <Route path="/criarnoticia" element={<CreateNews />}></Route>
+          <Route path="/noticias/:id" element={<NewsSelected />}></Route>
         </Routes>
 
       </Router>

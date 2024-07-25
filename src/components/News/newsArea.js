@@ -46,7 +46,8 @@ function NewsArea() {
           return (
 
             < News
-              fotonoticia={fotonoticia}
+              id={noticia.id_noticia}
+              imagem={noticia.imagem}
               key={noticia.id_noticia}
               titulo={noticia.titulo}
               subtitulo={noticia.subtitulo}

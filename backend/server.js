@@ -55,7 +55,8 @@ app.post('/enviar', async (req, res) => {
             data: {
                 titulo: dados.titulo,
                 subtitulo: dados.subtitulo,
-                conteudo: dados.conteudo
+                conteudo: dados.conteudo,
+                imagem: dados.imagem
             }
         });
 

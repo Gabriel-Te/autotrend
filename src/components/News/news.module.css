@@ -6,8 +6,10 @@
 }
 
 .noticia img{
-    min-width: 330px;
-    max-width: 330px;
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 220px;
+    max-height: 220px;
     object-fit: cover; /* Manter proporções da imagem */
 }
 

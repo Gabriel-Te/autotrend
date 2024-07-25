@@ -15,6 +15,7 @@ datasource db {
 
 model noticia {
 id_noticia Int @id @default(autoincrement())
+imagem String
 titulo String
 subtitulo String
 conteudo String
