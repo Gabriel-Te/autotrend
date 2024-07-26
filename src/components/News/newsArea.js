@@ -24,6 +24,10 @@ function NewsArea() {
     }
   }
 
+  const truncateText = (text, length) => {
+    return text.length > length ? `${text.substring(0, length)}...` : text 
+  }
+
   useEffect(() => {
     getNews()
   }, [])
@@ -43,15 +47,17 @@ function NewsArea() {
 
         newsData.map((noticia) => {
 
+
+
           return (
 
             < News
               id={noticia.id_noticia}
               imagem={noticia.imagem}
               key={noticia.id_noticia}
-              titulo={noticia.titulo}
-              subtitulo={noticia.subtitulo}
-              conteudo={noticia.conteudo}
+              titulo={truncateText(noticia.titulo, 70)}
+              subtitulo={truncateText(noticia.subtitulo, 80)}
+              conteudo={truncateText(noticia.conteudo, 200)}
             />
           )
         })

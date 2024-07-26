@@ -3,14 +3,14 @@
 
 .gridContainer{
     display: grid;
-    grid-template-columns: 60% auto;
+    grid-template-columns: 65% auto;
 
     grid-template-areas:
     "news social";
 }
 
 body{
-    background-color: #464646;
+    background-color: #292929;
     margin: 0;
     padding: 0;
 }

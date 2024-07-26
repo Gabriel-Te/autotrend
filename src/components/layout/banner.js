@@ -6,15 +6,19 @@ function Banner(props) {
 
     const lastNews = newsData[newsData.length - 1];
 
+    const truncateText = (text, length) => {
+        return text.length > length ? `${text.substring(0, length)}...` : text
+    }
+
     return (
         <div className={styles.ContainerBanner}>
             {lastNews ? (
                 <a href={`noticias/${lastNews.id_noticia}`}>
                 <img src={lastNews.imagem} alt="foto foda" />
                 <div className={styles.TextArea}>
-                        <p className={styles.titulo}>{lastNews.titulo}</p>
-                        <p className={styles.subtitulo}>{lastNews.subtitulo}</p>
-                        <p className={styles.conteudo}>{lastNews.conteudo}</p>
+                        <p className={styles.titulo}>{truncateText(lastNews.titulo, 70)}</p>
+                        <p className={styles.subtitulo}>{truncateText(lastNews.subtitulo, 80)}</p>
+                        <p className={styles.conteudo}>{truncateText(lastNews.conteudo, 200)}</p>
                 </div>
                 </a>
             ) : (
