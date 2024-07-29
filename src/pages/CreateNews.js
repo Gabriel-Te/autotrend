@@ -45,10 +45,11 @@ function CreateNews() {
 
     return (
         <div className={styles.container}>
-            <form className={styles.subtitulo} onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="titulo">Titulo:</label>
                     <input
+                        className={styles.titulo}
                         type="text"
                         placeholder='digite seu titulo'
                         name='titulo'
@@ -62,6 +63,7 @@ function CreateNews() {
                 <div>
                     <label htmlFor="subtitulo">subtitulo:</label>
                     <input
+                        className={styles.subtitulo}
                         type="text"
                         placeholder='digite seu subtitulo'
                         name='subtitulo'
@@ -74,7 +76,10 @@ function CreateNews() {
 
                 <div>
                     <label htmlFor="conteudo">Conteudo:</label>
-                    <input
+                    <textarea
+                        className={styles.conteudo}
+                        rows="4"
+                        cols="50"
                         type="text"
                         placeholder='digite o conteudo'
                         name='conteudo'
@@ -88,7 +93,10 @@ function CreateNews() {
                 
                 <div>
                     <label htmlFor="imagem">Imagem:</label>
-                    <input
+                    <textarea
+                        className={styles.imagemLink}
+                        rows="4"
+                        cols="50"
                         type="text"
                         placeholder='digite o url da imagem da sua noticia'
                         name='imagem'
@@ -99,8 +107,8 @@ function CreateNews() {
                     />
                 </div>
 
-                <div>
-                    <Button className={styles.botao} type='submit' value='Enviar' />
+                <div  className={styles.botao}>
+                    <Button type='submit' value='Enviar' />
 
                 </div>
             </form>

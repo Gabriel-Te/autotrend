@@ -1,5 +1,5 @@
 import { Link, } from 'react-router-dom'
-import atIndex from '../../img/autotrend.png'
+import atIndex from '../../img/autotrend.svg'
 import fotoPerfil from '../../img/imgperfil.png'
 import styles from './nav.module.css'
 
